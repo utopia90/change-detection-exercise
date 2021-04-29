@@ -1,0 +1,8 @@
+<h2>ASYNC PIPE CHARACTERS</h2>
+<!--Otorga el valor futuro al elemento a partir del observable sobre el que se ejecuta
+Cada next() que se ejecuta nos envia un nuevo valor que el pipe gestiona una vez se complete-->
+<div *ngFor="let character of characters$ | async">
+{{character}}
+
+<br><br>
+</div>
